@@ -74,4 +74,4 @@ jobs:
       - uses: actions/setup-python@v2
       
       - name: Run a second-line script
-        run: python $file $input-num-2
+        run: python $file1 $input-num-2
