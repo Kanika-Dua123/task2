@@ -6,9 +6,9 @@ on:
       environment:
         type: environment
         description: Select the environment
-        options:
-        - windows-latest
-        - ubuntu-latest
+        required: true
+        default: 'dev,staging,[uat],prod'
+
       boolean:
         type: boolean
         description: True or false
