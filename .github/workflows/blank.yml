@@ -1,6 +1,8 @@
 name: CI
 
 on:
+  push:
+    branches: ["master"]
   workflow_dispatch:
     inputs:
       
@@ -14,6 +16,15 @@ on:
         - foo
         - bar
         - baz
+
+          first-input:
+            description: "first input"
+            required: True
+
+          second-input:
+            description: "second input"
+            required: True  
+                
 
 env:
   file: file/python.py
