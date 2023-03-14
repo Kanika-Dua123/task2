@@ -7,6 +7,12 @@ on:
     inputs:
       environment:
         description: 'Environment'
+        type: choice
+        options:
+        - linux
+        - windows 
+
+
       
       boolean:
         type: boolean
