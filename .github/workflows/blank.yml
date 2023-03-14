@@ -8,7 +8,7 @@ on:
         description: Select the environment
       boolean:
         type: boolean
-        description: True
+        description: True or false
       choice:
         type: choice
         description: Make a choice
