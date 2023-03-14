@@ -14,6 +14,15 @@ on:
         - foo
         - bar
         - baz
+
+env:
+  file: file/python.py
+  file1: file/document.py
+
+  input-num-1: ${{github.event.inputs.input-num-1}}
+  input-num-2: ${{github.event.inputs.input-num-2}}
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
