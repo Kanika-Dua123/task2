@@ -3,12 +3,7 @@ name: CI
 on:
   workflow_dispatch:
     inputs:
-      environment:
-        type: environment
-        description: 'Select the environment'
-        required: false
-        default: 'dev,staging,[uat],prod'
-
+      
       boolean:
         type: boolean
         description: 'True or false'
