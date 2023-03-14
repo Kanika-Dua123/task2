@@ -6,7 +6,7 @@ on:
       environment:
         type: environment
         description: 'Select the environment'
-        required: true
+        required: false
         default: 'dev,staging,[uat],prod'
 
       boolean:
