@@ -5,13 +5,13 @@ on:
     inputs:
       environment:
         type: environment
-        description: Select the environment
+        description: 'Select the environment'
         required: true
         default: 'dev,staging,[uat],prod'
 
       boolean:
         type: boolean
-        description: True or false
+        description: 'True or false'
       choice:
         type: choice
         description: Make a choice
