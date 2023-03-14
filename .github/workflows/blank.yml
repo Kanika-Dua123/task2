@@ -7,8 +7,6 @@ on:
     inputs:
       environment:
         description: 'Environment'
-        required: true
-        default: 'dev,staging,[uat],prod'
       
       boolean:
         type: boolean
@@ -23,11 +21,11 @@ on:
 
       input-num-1:
           description: "first input"
-          required: True
+          required: true
 
       input-num-2:
             description: "second input"
-            required: True  
+            required: true  
                 
 
 env:
@@ -42,12 +40,14 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
+
     steps:
-        uses: actions/checkout@v2
-        name: greet
+      - uses: actions/checkout@v2
+
+      - name: greet
         run: | 
-          echo "evironment is ${{ github.event.inputs.environment }}"
-          echo "boolean is ${{ github.event.inputs.boolean }}" 
+          echo "Environment is ${{ github.event.inputs.environment}}"
+          echo "boolean is ${{ github.event.inputs.boolean }}"
           echo "choice is ${{ github.event.inputs.choice }}"
 
   job1:
