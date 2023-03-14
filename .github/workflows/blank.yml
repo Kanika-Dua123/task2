@@ -6,6 +6,9 @@ on:
       environment:
         type: environment
         description: Select the environment
+        options:
+        - windows-latest
+        - ubuntu-latest
       boolean:
         type: boolean
         description: True or false
