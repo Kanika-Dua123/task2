@@ -41,11 +41,11 @@ env:
 jobs:
 
   build:
-  runs-on: ubuntu-latest
-    steps:
+    runs-on: ubuntu-latest
+      steps:
         uses: actions/checkout@v2
-          name: greet
-          run: | 
+        name: greet
+        run: | 
           echo ${{ github.event.inputs.environment }}
           echo "boolean is ${{ github.event.inputs.boolean }}" / ${{ inputs.boolean }} 
           echo "choice is ${{ github.event.inputs.choice }}" / ${{ inputs.choice }} 
