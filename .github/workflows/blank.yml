@@ -17,11 +17,11 @@ on:
         - bar
         - baz
 
-          first-input:
-            description: "first input"
-            required: True
+      input-num-1:
+          description: "first input"
+          required: True
 
-          second-input:
+      input-num-2:
             description: "second input"
             required: True  
                 
